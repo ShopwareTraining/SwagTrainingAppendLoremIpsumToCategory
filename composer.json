@@ -1,0 +1,41 @@
+{
+  "name": "swag-training/append-lorem-ipsum-to-category",
+  "description": "Some plugin description",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jisse"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4",
+    "joshtronic/php-loremipsum": "^2.1"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SwagTraining\\AppendLoremIpsumToCategory\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SwagTraining\\AppendLoremIpsumToCategory\\SwagTrainingAppendLoremIpsumToCategory",
+    "copyright": "Jisse",
+    "label": {
+      "de-DE": "SwagTrainingAppendLoremIpsumToCategory",
+      "en-GB": "SwagTrainingAppendLoremIpsumToCategory"
+    },
+    "description": {
+      "de-DE": "Some plugin description",
+      "en-GB": "Some plugin description"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    },
+    "supportLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    }
+  }
+}

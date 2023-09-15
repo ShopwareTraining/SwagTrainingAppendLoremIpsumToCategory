@@ -1,0 +1,10 @@
+{% sw_extends '@Storefront/storefront/element/cms-element-text.html.twig' %}
+
+{% block element_text %}
+    {{ parent() }}
+
+    {% set isCategoryDescription = element.config.content.value == 'category.description' %}
+    {% if isCategoryDescription %}
+        {% sw_include '@SwagTrainingAppendLoremIpsumToCategory/storefront/lorem-ipsum.html.twig' %}
+    {% endif %}
+{% endblock %}
